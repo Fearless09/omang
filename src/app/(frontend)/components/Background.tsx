@@ -1,8 +1,6 @@
 import { cn } from "@/lib/utils";
 import React, { ComponentProps, FC } from "react";
 
-const className = "";
-
 const Background = () => {
   return (
     <section className="wrapper relative">

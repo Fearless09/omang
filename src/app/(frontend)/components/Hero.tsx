@@ -5,8 +5,9 @@ const Hero = () => {
   return (
     <section className="wrapper ipad:pt-[150px] max-w-[970px] pt-16 sm:pt-[100px]">
       <h1 className="ipad:text-[48px]/[76px] text-center text-[32px]/[48px] font-semibold sm:text-[38px]/[56px]">
-        I'm Omang ✌🏼 a <span className="text-muted">Product Designer I</span>{" "}
-        help teams create fun, memorable,{" "}
+        I&apos;m Omang ✌🏼 a{" "}
+        <span className="text-muted">Product Designer I</span> help teams create
+        fun, memorable,{" "}
         <span className="text-muted">and human experiences</span>. Specialized
         in
       </h1>

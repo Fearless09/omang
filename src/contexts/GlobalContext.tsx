@@ -4,7 +4,7 @@ import { createContext, useContext, useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-const Context = createContext<{} | undefined>(undefined);
+const Context = createContext<{ state: boolean } | undefined>(undefined);
 
 const ContextProvider = ({
   children,
@@ -15,7 +15,9 @@ const ContextProvider = ({
     AOS.init();
   }, []);
 
-  return <Context.Provider value={{}}>{children}</Context.Provider>;
+  return (
+    <Context.Provider value={{ state: true }}>{children}</Context.Provider>
+  );
 };
 
 const UseContextProvider = () => {
