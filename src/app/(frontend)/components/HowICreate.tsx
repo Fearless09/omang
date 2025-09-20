@@ -36,7 +36,7 @@ const HowICreate = () => {
             <h1 className="ipad:text-2xl mt-5 text-xl font-semibold xl:text-[32px]">
               {step.title}
             </h1>
-            <p className="mt-4 line-clamp-3 w-full max-w-[450px] truncate text-balance">
+            <p className="mt-4 w-full max-w-[450px] text-balance">
               {step.subttitle}
             </p>
           </div>

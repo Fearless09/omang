@@ -39,12 +39,12 @@ const Projects = () => {
                 <h2 className="font-libre-bodoni text-xl font-bold">
                   {project.title}
                 </h2>
-                <p className="mt-2.5 text-sm/[150%] font-medium text-black">
+                <p className="mt-2.5 line-clamp-2 text-sm/[150%] font-medium text-balance text-black">
                   {project.subtitle}
                 </p>
               </div>
 
-              <div className="transition-300 flex size-0 shrink-0 items-center justify-center rounded-full bg-black text-white group-hover:size-9.5">
+              <div className="transition-300 flex sm:size-0 shrink-0 items-center justify-center rounded-full bg-black text-white group-hover:size-9.5 size-9">
                 <ArrowRight />
               </div>
             </div>
