@@ -33,7 +33,7 @@ const HowICreate = () => {
               <Icon icon={step.icon} className="z-[1] size-7" />
             </div>
 
-            <h1 className="ipad:text-2xl mt-5 text-xl font-semibold xl:text-[32px]">
+            <h1 className="ipad:text-2xl mt-5 text-xl font-semibold uppercase xl:text-[32px]">
               {step.title}
             </h1>
             <p className="mt-4 w-full max-w-[450px] text-balance">

@@ -21,7 +21,7 @@ const Projects = () => {
               className={cn(
                 "transition-300 relative h-full group-hover:scale-103",
                 {
-                  "ms-9 aspect-[4.26/4.77]": project.desktop,
+                  "ms-9 aspect-[5.87/4.18]": project.desktop,
                   "mx-auto aspect-[2.9/4.77]": !project.desktop,
                 },
               )}
@@ -36,7 +36,7 @@ const Projects = () => {
 
             <div className="absolute inset-x-0 bottom-0 flex cursor-pointer items-end justify-between gap-3.5 bg-white/25 px-4 pt-6 pb-5 backdrop-blur-[48px]">
               <div className="flex-1">
-                <h2 className="font-libre-bodoni text-xl font-bold">
+                <h2 className="font-libre-bodoni text-xl font-bold uppercase">
                   {project.title}
                 </h2>
                 <p className="mt-2.5 line-clamp-2 text-sm/[150%] font-medium text-balance text-black">
@@ -44,7 +44,7 @@ const Projects = () => {
                 </p>
               </div>
 
-              <div className="transition-300 flex sm:size-0 shrink-0 items-center justify-center rounded-full bg-black text-white group-hover:size-9.5 size-9">
+              <div className="transition-300 flex size-9 shrink-0 items-center justify-center rounded-full bg-black text-white group-hover:size-9.5 sm:size-0">
                 <ArrowRight />
               </div>
             </div>

@@ -11,6 +11,7 @@ import {
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
+import { Tooltip } from "react-tooltip";
 
 const Navbar = () => {
   const pathname = usePathname();
@@ -35,14 +36,17 @@ const Navbar = () => {
 
       <ul className="hidden items-center gap-2.5 md:flex">
         {socialLinks.map((link, index) => (
-          <Link
-            href={link.href}
-            key={index}
-            title={link.name}
-            className="transition-300 flex size-11 items-center justify-center rounded-full bg-black text-white hover:bg-black/80 active:scale-98"
-          >
-            <HugeiconsIcon icon={link.icon} className="size-6" />
-          </Link>
+          <React.Fragment key={index}>
+            <Link
+              href={link.href}
+              target="_blank"
+              className="transition-300 flex size-11 items-center justify-center rounded-full bg-black text-white hover:bg-black/80 active:scale-98"
+              data-tooltip-id={link.name}
+            >
+              <HugeiconsIcon icon={link.icon} className="size-6" />
+            </Link>
+            <Tooltip id={link.name} content={link.name} />
+          </React.Fragment>
         ))}
       </ul>
     </header>
@@ -54,17 +58,17 @@ export default Navbar;
 const socialLinks = [
   {
     name: "LinkedIn",
-    href: "#",
+    href: "https://www.linkedin.com/in/omang-thomas-a6519b228?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
     icon: Linkedin02Icon,
   },
   {
     name: "Mail",
-    href: "#",
+    href: "mailto:omangthomas001@gmail.com",
     icon: MailAtSign01Icon,
   },
   {
     name: "Whatsapp",
-    href: "#",
+    href: "https://wa.me/2349055584700",
     icon: WhatsappIcon,
   },
 ];
