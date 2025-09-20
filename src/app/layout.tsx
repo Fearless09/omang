@@ -18,6 +18,8 @@ const montserrat = Montserrat({
   subsets: ["latin"],
 });
 
+const url = process.env.NEXT_PUBLIC_URL || "http://localhost:3000";
+
 export const metadata: Metadata = {
   title: "Omang Thomas - UI/UX Designer",
   description:
@@ -39,17 +41,17 @@ export const metadata: Metadata = {
     "Visual Design",
     "User-Centered Design",
   ],
-  authors: [{ name: "Omang Thomas", url: "https://omang.dev" }],
+  authors: [{ name: "Omang Thomas", url }],
   icons: "/ux.svg",
   openGraph: {
     title: "Omang Thomas - UI/UX Designer",
     description:
       "Portfolio of Omang Thomas, a passionate UI/UX designer crafting intuitive and engaging digital experiences. Explore my work, skills, and contact details for a seamless user experience.",
-    url: "https://omang.dev",
+    url,
     siteName: "Omang Thomas Portfolio",
     images: [
       {
-        url: "https://omang.dev/omang.svg",
+        url: url + "/omang.svg",
         width: 1200,
         height: 630,
         alt: "Omang Thomas Portfolio",
@@ -63,7 +65,7 @@ export const metadata: Metadata = {
     title: "Omang Thomas - UI/UX Designer",
     description:
       "Portfolio of Omang Thomas, a passionate UI/UX designer crafting intuitive and engaging digital experiences. Explore my work, skills, and contact details for a seamless user experience.",
-    images: ["https://omang.dev/omang.svg"],
+    images: [url + "/omang.svg"],
     creator: "@omang_tech",
   },
 };
