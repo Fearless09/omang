@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital,wght@0,400..700;1,400..700&display=swap");
+
+@import "tailwindcss";
+
+:root {
+  --background: #f6f5ff;
+  --foreground: #141414;
+}
+
+@theme inline {
+  --color-background: #f6f5ff;
+  --color-foreground: #141414;
+  --color-muted: #8f8f8f;
+
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  --font-montserrat: var(--font-montserrat);
+  --font-libre-bodoni: "Libre Bodoni", serif;
+
+  --breakpoint-ipad: 992px;
+}
+
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+} */
+
+html,
+body {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-montserrat);
+}
+
+@utility wrapper {
+  @apply mx-auto w-full max-w-[1316px] px-4;
+}
+
+@utility heading {
+  @apply font-libre-bodoni text-center text-[38px]/[56px] md:text-5xl font-semibold md:font-bold uppercase;
+}
+
+@utility scale-98 {
+  @apply scale-[.98];
+}
+
+@utility transition-300 {
+  @apply transition-all duration-350;
+}
+
+@utility card {
+  @apply wrapper relative flex items-start justify-between gap-10 overflow-clip rounded-[12px] border-2 border-white bg-gradient-to-r md:rounded-[30px];
+}
