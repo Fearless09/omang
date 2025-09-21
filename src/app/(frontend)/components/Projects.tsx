@@ -13,7 +13,7 @@ const Projects = () => {
           <div
             key={index}
             className={cn(
-              "group relative aspect-[4.26/4.77] overflow-clip rounded-[12px] border-2 border-white bg-[#F3EAF080] pt-10",
+              "group relative aspect-[4.26/5] overflow-clip rounded-[12px] border-2 border-white bg-[#F3EAF080] pt-10",
               project.bg,
             )}
           >
@@ -22,7 +22,7 @@ const Projects = () => {
                 "transition-300 relative h-full group-hover:scale-103",
                 {
                   "ms-9 aspect-[5.87/4.18]": project.desktop,
-                  "mx-auto aspect-[2.9/4.77]": !project.desktop,
+                  "mx-auto aspect-[2.9/5]": !project.desktop,
                 },
               )}
             >
@@ -34,12 +34,12 @@ const Projects = () => {
               />
             </div>
 
-            <div className="absolute inset-x-0 bottom-0 flex cursor-pointer items-end justify-between gap-3.5 bg-white/25 px-4 pt-6 pb-5 backdrop-blur-[48px]">
+            <div className="absolute inset-x-0 bottom-0 flex cursor-pointer items-end justify-between gap-3.5 bg-white/25 px-4 pt-5 pb-4 backdrop-blur-[48px]">
               <div className="flex-1">
                 <h2 className="font-libre-bodoni text-xl font-bold uppercase">
                   {project.title}
                 </h2>
-                <p className="mt-2.5 line-clamp-2 text-sm/[150%] font-medium text-balance text-black">
+                <p className="mt-2 line-clamp-2 text-sm/[150%] font-medium text-balance text-black">
                   {project.subtitle}
                 </p>
               </div>
