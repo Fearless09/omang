@@ -14,9 +14,11 @@ const HowICreate = () => {
           <div
             key={index}
             className={cn(
-              "rounded-[12px] border-2 border-white bg-gradient-to-l from-white/50 to-white/30 px-7 py-10 lg:px-10 lg:pt-16 lg:pb-13",
+              "rounded-[12px] border-2 border-white bg-gradient-to-l from-white/50 to-white/30 px-7 py-10 lg:px-10 lg:pt-15 lg:pb-12",
               step.bg,
             )}
+            data-aos="fade-up"
+            data-aos-delay={index * 150}
           >
             <div
               className={cn(

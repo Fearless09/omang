@@ -20,6 +20,8 @@ const Hero = () => {
               "shrink-0 rounded-[10px] px-5 py-2.5 font-semibold tracking-[1.2] md:text-xl",
               tag.color,
             )}
+            data-aos="fade-up"
+            data-aos-delay={index * 100}
           >
             {tag.name}
           </li>

@@ -16,6 +16,8 @@ const Projects = () => {
               "group relative aspect-[4.26/5] overflow-clip rounded-[12px] border-2 border-white bg-[#F3EAF080] pt-10",
               project.bg,
             )}
+            data-aos="fade-up"
+            data-aos-delay={index * 150}
           >
             <div
               className={cn(
