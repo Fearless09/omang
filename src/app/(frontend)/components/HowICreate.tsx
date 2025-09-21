@@ -84,7 +84,7 @@ const steps = [
     subttitle:
       "Review and refine my design, ensuring it meets the project's objective. Make any necessary adjustments and finalize the design for implantation",
     icon: "solar:hand-stars-bold",
-    iconBg: "bg-[#FFE9D8]",
     iconColor: "text-[#FEAD8A]",
+    iconBg: "bg-[#FFE9D8]",
   },
 ];
