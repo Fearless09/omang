@@ -17,7 +17,7 @@ const Navbar = () => {
   const pathname = usePathname();
 
   return (
-    <header className="wrapper relative z-[2] flex items-center justify-between py-7">
+    <header className="wrapper relative z-10 flex items-center justify-between py-7">
       <OmangSvg className="relative hidden aspect-[9.1/3.1] w-full max-w-[90px] md:inline-block" />
 
       <nav className="fixed top-5 left-1/2 flex h-14 w-full max-w-[250px] -translate-x-1/2 items-center justify-between gap-3 rounded-full bg-black px-8 py-3.5 text-white sm:max-w-[300px] sm:px-12 sm:py-5 md:top-auto">
