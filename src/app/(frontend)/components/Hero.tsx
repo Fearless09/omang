@@ -5,7 +5,7 @@ import React, { ComponentProps, FC, useEffect, useState } from "react";
 
 const Hero = () => {
   return (
-    <section className="wrapper ipad:pt-[150px] max-w-[970px] pt-[100px]">
+    <section className="wrapper relative z-[2] ipad:pt-[150px] max-w-[970px] pt-[100px]">
       <h1 className="ipad:text-[48px]/[76px] text-center text-[32px]/[48px] font-semibold sm:text-[38px]/[56px]">
         I&apos;m Omang ✌🏼 a <SpecialChars>Product Designer I</SpecialChars> help
         teams create fun, memorable,{" "}
