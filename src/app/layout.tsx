@@ -47,7 +47,7 @@ export const metadata: Metadata = {
     "User-Centered Design",
   ],
   authors: [{ name: "Omang Thomas", url }],
-  icons: "/ux.svg",
+  icons: "/profile.jpg",
   openGraph: {
     title: "Omang Thomas - UI/UX Designer",
     description:
@@ -56,7 +56,7 @@ export const metadata: Metadata = {
     siteName: "Omang Thomas Portfolio",
     images: [
       {
-        url: url + "/omang.svg",
+        url: url + "/profile.jpg",
         width: 1200,
         height: 630,
         alt: "Omang Thomas Portfolio",
@@ -70,7 +70,7 @@ export const metadata: Metadata = {
     title: "Omang Thomas - UI/UX Designer",
     description:
       "Portfolio of Omang Thomas, a passionate UI/UX designer crafting intuitive and engaging digital experiences. Explore my work, skills, and contact details for a seamless user experience.",
-    images: [url + "/omang.svg"],
+    images: [url + "/profile.jpg"],
     creator: "@omang_tech",
   },
 };
