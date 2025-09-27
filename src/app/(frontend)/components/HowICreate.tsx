@@ -55,7 +55,7 @@ const steps = [
     bg: "from-[#FEEDEE] to-[#F2EAFE]",
     title: "DEFINE THE PROBLEM",
     subttitle:
-      "identify the design purpose, target audience, and requirements. Research and gather inspiration to clarify the project's goals.",
+      "Identify the design purpose, target audience, and requirements. Research and gather inspiration to clarify the project's goals.",
     icon: "streamline-flex-color:code-monitor-1-flat",
     iconColor: "text-[#2859C5]",
     iconBg: "bg-[#8FBFFA]/50",

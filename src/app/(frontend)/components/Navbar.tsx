@@ -1,6 +1,5 @@
 "use client";
 
-import { OmangSvg } from "@/components/shared/Svg";
 import React from "react";
 import { HugeiconsIcon } from "@hugeicons/react";
 import {
@@ -12,42 +11,51 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
 import { Tooltip } from "react-tooltip";
+import Image from "next/image";
 
 const Navbar = () => {
   const pathname = usePathname();
 
   return (
     <header className="wrapper relative z-10 flex items-center justify-between py-7">
-      <OmangSvg className="relative hidden aspect-[9.1/3.1] w-full max-w-[90px] md:inline-block" />
+      <div className="hidden shrink-0 items-center gap-4 md:flex">
+        <span className="relative h-[68px] w-[58px] overflow-clip rounded-[100%]">
+          <Image
+            alt="Thomas Omang"
+            src={"/profile.jpg"}
+            fill
+            priority
+            className="object-cover object-center"
+          />
+        </span>
+        <div className="font-baloo flex flex-col gap-1 text-base/[100%]">
+          <span className="text-[#5B5B5B]">I&apos;m</span>
+          <span className="text-black">
+            <span className="ipad:inline hidden">Omang,</span> Thomas Omang
+          </span>
+        </div>
+      </div>
 
-      <nav className="fixed top-5 left-1/2 flex h-14 w-full max-w-[250px] -translate-x-1/2 items-center justify-between gap-3 rounded-full bg-black px-8 py-3.5 text-white sm:max-w-[300px] sm:px-12 sm:py-5 md:top-auto">
+      <ul className="fixed top-5 left-1/2 flex h-14 w-full max-w-[250px] -translate-x-1/2 items-center justify-between gap-3 rounded-full bg-black px-8 py-3.5 text-white sm:max-w-[300px] sm:px-12 sm:py-5 md:top-auto">
         {navLinks.map((link, index) => (
-          <Link
-            href={link.href}
-            key={index}
-            className={cn("transition-300 text-sm sm:text-base", {
-              "font-semibold": pathname === link.href,
-            })}
-          >
-            {link.name}
-          </Link>
-        ))}
-      </nav>
-
-      <ul className="hidden items-center gap-2.5 md:flex">
-        {socialLinks.map((link, index) => (
-          <React.Fragment key={index}>
+          <li key={index} className="relative shrink-0">
             <Link
               href={link.href}
-              target="_blank"
-              className="transition-300 flex size-11 items-center justify-center rounded-full bg-black text-white hover:bg-black/80 active:scale-98"
-              data-tooltip-id={link.name}
+              className={cn("transition-300 text-sm sm:text-base", {
+                "font-semibold": pathname === link.href,
+              })}
             >
-              <HugeiconsIcon icon={link.icon} className="size-6" />
+              {link.name}
             </Link>
-            <Tooltip id={link.name} content={link.name} />
-          </React.Fragment>
+            {pathname === link.href && (
+              <span className="absolute left-1/2 block size-1.5 -translate-x-1/2 animate-pulse rounded-full bg-[#F5A7BC]" />
+            )}
+          </li>
         ))}
+      </ul>
+
+      <ul className="hidden items-center gap-2.5 md:flex">
+        <SocialLinks />
       </ul>
     </header>
   );
@@ -55,7 +63,23 @@ const Navbar = () => {
 
 export default Navbar;
 
-const socialLinks = [
+export const SocialLinks = () => {
+  return socialLinks.map((link, index) => (
+    <React.Fragment key={index}>
+      <Link
+        href={link.href}
+        target="_blank"
+        className="transition-300 flex size-11 items-center justify-center rounded-full bg-black text-white hover:bg-black/80 active:scale-98"
+        data-tooltip-id={link.name}
+      >
+        <HugeiconsIcon icon={link.icon} className="size-6" />
+      </Link>
+      <Tooltip id={link.name} content={link.name} />
+    </React.Fragment>
+  ));
+};
+
+export const socialLinks = [
   {
     name: "LinkedIn",
     href: "https://www.linkedin.com/in/omang-thomas-a6519b228?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
@@ -74,9 +98,9 @@ const socialLinks = [
 ];
 
 const navLinks = [
-  { name: "Home", href: "#home" },
-  { name: "About", href: "#about" },
+  { name: "Home", href: "/" },
+  { name: "About", href: "/about" },
   // {name: "Services", href: "#services"},
   // {name: "Portfolio", href: "#portfolio"},
-  { name: "Contact", href: "#contact" },
+  { name: "Resume", href: "/resume" },
 ];

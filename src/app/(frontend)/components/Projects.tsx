@@ -41,7 +41,7 @@ const Projects = () => {
                 <h2 className="font-libre-bodoni text-xl font-bold uppercase">
                   {project.title}
                 </h2>
-                <p className="mt-2 line-clamp-2 text-sm/[150%] font-medium text-balance text-black">
+                <p className="font-inter mt-2 line-clamp-2 text-sm/[150%] font-normal text-balance text-black">
                   {project.subtitle}
                 </p>
               </div>
@@ -65,7 +65,17 @@ const Projects = () => {
 
 export default Projects;
 
-const projects = [
+type PROJECT = {
+  bg: string;
+  img: string;
+  title: string;
+  subtitle: string;
+  href: string;
+  desktop?: boolean;
+  comingSoon?: boolean;
+};
+
+const projects: PROJECT[] = [
   {
     bg: "bg-[#EFF6FF]",
     img: "/de_shadows.png",
@@ -74,14 +84,6 @@ const projects = [
       "A platform for taking stocks inventory for Gadgets and Electronics.",
     href: "",
     desktop: true,
-  },
-  {
-    bg: "bg-[#F3EAF080]",
-    img: "/funpay.png",
-    title: "FUNPAY",
-    subtitle:
-      "A fintech application designed to simplify international money transfers.",
-    href: "",
   },
   {
     bg: "bg-[#E8E8E8]",
@@ -99,21 +101,31 @@ const projects = [
       "A platform that connect users with other pharmacists and reach out in case of an emergency.",
     href: "",
   },
+  {
+    bg: "bg-[#F3EAF080]",
+    img: "/funpay.png",
+    title: "FUNPAY",
+    subtitle:
+      "A fintech application designed to simplify international money transfers.",
+    href: "",
+  },
 
   {
-    bg: "bg-[#F2EAFE]",
+    bg: "bg-[#CFEAC1]",
     img: "/demo.png",
-    title: "Title",
-    subtitle: "Subtitle",
+    title: "HEALTHCARE",
+    subtitle:
+      "A healthcare mobile application for users to monitor their heartbeat rate, blood pressure etc.",
     href: "",
     comingSoon: true,
   },
   {
-    bg: "bg-[#FEEDEE]",
-    img: "/demo.png",
-    title: "Title",
-    subtitle: "Subtitle",
+    bg: "bg-[#FFF5F1]",
+    img: "/omegainbox.png",
+    title: "OMEGAINBOX",
+    subtitle:
+      "OmegaInbox is a sophisticated email marketing web application designed to empower businesses to cre..",
     href: "",
-    comingSoon: true,
+    desktop: true,
   },
 ];

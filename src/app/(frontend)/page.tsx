@@ -1,4 +1,5 @@
 import Background from "./components/Background";
+import CTA from "./components/CTA";
 import Hero from "./components/Hero";
 import HowICreate from "./components/HowICreate";
 import Navbar from "./components/Navbar";
@@ -14,6 +15,7 @@ export default function Home() {
       <Showcase />
       <HowICreate />
       <Projects />
+      <CTA />
     </section>
   );
 }

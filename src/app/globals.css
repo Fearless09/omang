@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital,wght@0,400..700;1,400..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Libre+Bodoni:ital,wght@0,400..700;1,400..700&display=swap");
 
 @import "tailwindcss";
 
@@ -15,6 +15,8 @@
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
   --font-montserrat: var(--font-montserrat);
+  --font-inter: var(--font-inter);
+  --font-baloo: "Baloo 2", sans-serif;
   --font-libre-bodoni: "Libre Bodoni", serif;
 
   --breakpoint-ipad: 992px;
@@ -43,11 +45,7 @@ body {
 }
 
 @utility heading {
-  @apply font-libre-bodoni text-center text-[38px]/[56px] md:text-5xl font-semibold md:font-bold uppercase;
-}
-
-@utility scale-98 {
-  @apply scale-[.98];
+  @apply font-libre-bodoni text-center text-[38px]/[56px] font-semibold uppercase md:text-5xl md:font-bold;
 }
 
 @utility transition-300 {
