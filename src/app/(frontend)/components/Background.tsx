@@ -19,7 +19,7 @@ const Oval: FC<ComponentProps<"div">> = ({ className, ...props }) => {
   return (
     <div
       className={cn(
-        "absolute top-0 aspect-[4.16/1.71] w-[416px] -translate-x-1/2 rounded-[100%] bg-[#FD7F9A] blur-[200px]",
+        "absolute top-0 aspect-[4.16/2] w-[416px] -translate-x-1/2 rounded-[100%] bg-[#FD7F9A] blur-[100px]",
         className,
       )}
       {...props}

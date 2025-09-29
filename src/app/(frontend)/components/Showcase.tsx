@@ -11,6 +11,7 @@ const Showcase = () => {
       <section className="overflow-clip" data-aos="fade-up">
         <Carousel
           autoplay
+          arrows={true}
           className="aspect-[13.16/7.5] w-full overflow-clip rounded-[14px] border-2 border-white"
         >
           {slides.map((slide, index) => (

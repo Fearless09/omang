@@ -47,7 +47,7 @@ export const metadata: Metadata = {
     "User-Centered Design",
   ],
   authors: [{ name: "Omang Thomas", url }],
-  icons: "/profile.jpg",
+  icons: "/ux.svg",
   openGraph: {
     title: "Omang Thomas - UI/UX Designer",
     description:

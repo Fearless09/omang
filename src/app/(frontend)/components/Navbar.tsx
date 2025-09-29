@@ -28,7 +28,7 @@ const Navbar = () => {
             className="object-cover object-center"
           />
         </span>
-        <div className="font-baloo flex flex-col gap-1 text-base/[100%]">
+        <div className="font-baloo flex flex-col gap-1 text-base/[100%] font-medium">
           <span className="text-[#5B5B5B]">I&apos;m</span>
           <span className="text-black">
             <span className="ipad:inline hidden">Omang,</span> Thomas Omang

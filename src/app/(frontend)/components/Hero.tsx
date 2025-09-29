@@ -1,11 +1,18 @@
 "use client";
 
 import { cn } from "@/lib/utils";
-import React, { ComponentProps, FC, useEffect, useState } from "react";
+import React, { ComponentProps, FC } from "react";
 
 const Hero = () => {
   return (
-    <section className="wrapper ipad:pt-[150px] relative z-[2] max-w-[970px] pt-[100px]">
+    <section className="wrapper ipad:pt-[100px] relative z-[2] max-w-[970px] pt-[100px]">
+      <h6 className="mx-auto mb-6 flex w-max items-center gap-1.5 rounded-full border border-white/20 bg-white/25 px-4.5 py-2.5 backdrop-blur-md">
+        <span className="size-1.5 rounded-full bg-black" />
+        <span className="font-montserrat text-sm font-medium text-black">
+          Available For Project And Fulltime Role
+        </span>
+      </h6>
+
       <h1 className="ipad:text-[48px]/[76px] text-center text-[32px]/[48px] font-semibold sm:text-[38px]/[56px]">
         I&apos;m Omang ✌🏼 a <SpecialChars>Product Designer I</SpecialChars> help
         teams create fun, memorable,{" "}
@@ -33,37 +40,10 @@ const Hero = () => {
 
 export default Hero;
 
-const specialColors = [
-  "text-muted",
-  "text-[#2859C5]",
-  "text-[#FF2050]",
-  "text-[#03A84E]",
-  "text-[#FEAD8A]",
-];
-
 const SpecialChars: FC<ComponentProps<"span">> = ({ className, ...props }) => {
-  const [index, setIndex] = useState<number>(0);
-
-  useEffect(() => {
-    const inter = setInterval(() => {
-      // if (index === specialColors.length - 1) {
-      //   setIndex(0);
-      // } else {
-      //   setIndex((prev) => prev + 1);
-      // }
-      setIndex((prev) => (prev + 1) % specialColors.length);
-    }, 2500);
-
-    return () => clearInterval(inter);
-  }, []);
-
   return (
     <span
-      className={cn(
-        "text-muted transition-all duration-1000 ease-linear",
-        specialColors[index],
-        className,
-      )}
+      className={cn("text-muted transition-300 ease-linear", className)}
       {...props}
     />
   );
