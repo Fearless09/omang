@@ -91,7 +91,7 @@ const projects: PROJECT[] = [
     title: "MONTANA",
     subtitle:
       "A platform thet Revolutionize the dining experience through innovative design and features.",
-    href: "",
+    href: "/healthcare.png",
   },
   {
     bg: "bg-[#E2E8FF]",
