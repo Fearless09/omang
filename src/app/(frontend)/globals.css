@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Libre+Bodoni:ital,wght@0,400..700;1,400..700&display=swap");
-
 @import "tailwindcss";
 
 :root {
@@ -16,8 +14,9 @@
   --font-mono: var(--font-geist-mono);
   --font-montserrat: var(--font-montserrat);
   --font-inter: var(--font-inter);
-  --font-baloo: "Baloo 2", sans-serif;
-  --font-libre-bodoni: "Libre Bodoni", serif;
+  --font-baloo-2: var(--font-baloo-2);
+  --font-libre-bodoni: var(--font-libre-bodoni);
+  --font-sf_pro: var(--font-sf_pro);
 
   --breakpoint-ipad: 992px;
 }

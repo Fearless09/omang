@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono, Montserrat, Inter } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 import { ContextProvider } from "@/contexts/GlobalContext";
 import Background from "@/components/shared/Background";
@@ -25,6 +26,77 @@ const inter = Inter({
   variable: "--font-inter",
   subsets: ["latin"],
 });
+
+const baloo_2 = localFont({
+  src: "./fonts/Baloo_2/Baloo2-VariableFont_wght.ttf",
+  variable: "--font-baloo-2",
+});
+
+const libre_bodoni = localFont({
+  src: [
+    {
+      path: "./fonts/Libre_Bodoni/LibreBodoni-VariableFont_wght.ttf",
+      style: "normal",
+    },
+    {
+      path: "./fonts/Libre_Bodoni/LibreBodoni-Italic-VariableFont_wght.ttf",
+      style: "italic",
+    },
+  ],
+  variable: "--font-libre-bodoni",
+});
+
+// const sf_pro = localFont({
+//   src: [
+//     {
+//       path: "./fonts/sf-pro-display/SFPRODISPLAYBLACKITALIC.OTF",
+//       style: "italic",
+//       weight: "900",
+//     },
+//     {
+//       path: "./fonts/sf-pro-display/SFPRODISPLAYBOLD.OTF",
+//       style: "normal",
+//       weight: "700",
+//     },
+//     {
+//       path: "./fonts/sf-pro-display/SFPRODISPLAYHEAVYITALIC.OTF",
+//       style: "italic",
+//       weight: "800",
+//     },
+//     {
+//       path: "./fonts/sf-pro-display/SFPRODISPLAYLIGHTITALIC.OTF",
+//       style: "italic",
+//       weight: "300",
+//     },
+//     {
+//       path: "./fonts/sf-pro-display/SFPRODISPLAYMEDIUM.OTF",
+//       style: "noraml",
+//       weight: "500",
+//     },
+//     {
+//       path: "./fonts/sf-pro-display/SFPRODISPLAYREGULAR.OTF",
+//       style: "normal",
+//       weight: "400",
+//     },
+//     {
+//       path: "./fonts/sf-pro-display/SFPRODISPLAYSEMIBOLDITALIC.OTF",
+//       style: "italic",
+//       weight: "600",
+//     },
+//     {
+//       path: "./fonts/sf-pro-display/SFPRODISPLAYTHINITALIC.OTF",
+//       style: "italic",
+//       weight: "100",
+//     },
+//     {
+//       path: "./fonts/sf-pro-display/SFPRODISPLAYULTRALIGHTITALIC.OTF",
+//       style: "italic",
+//       weight: "200",
+//     },
+//   ],
+  
+//   variable: "--font-sf_pro",
+// });
 
 const url = process.env.NEXT_PUBLIC_URL || "http://localhost:3000";
 
@@ -92,7 +164,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${montserrat.variable} ${inter.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${montserrat.variable} ${inter.variable} ${baloo_2.variable} ${libre_bodoni.variable} antialiased`}
       >
         <ContextProvider>
           <section className="min-h-dvh w-screen overflow-clip pb-[100px]">
