@@ -11,6 +11,8 @@ const Stats = () => {
             "font-montserrat flex max-w-[390px] flex-1 flex-col gap-3.5 rounded-xl border border-white bg-gradient-to-l px-5 py-7.5 text-center font-semibold",
             stat.bg,
           )}
+          data-aos="fade-up"
+          data-aos-delay={index * 150}
         >
           <h1 className="text-[40px]">{stat.value}</h1>
           <p className="text-[28px] font-medium">{stat.title}</p>

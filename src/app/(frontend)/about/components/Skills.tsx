@@ -11,6 +11,8 @@ const Skills = () => {
           <li
             key={index}
             className="rounded-[20px] bg-gradient-to-r from-[#D5C1DA] to-[#ECC0BD] px-6 py-2 text-xl text-black"
+            data-aos="fade-up"
+            data-aos-delay={index * 150}
           >
             {skill}
           </li>

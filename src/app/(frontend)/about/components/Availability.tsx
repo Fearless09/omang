@@ -6,7 +6,10 @@ const Availability = () => {
     <section className="wrapper mt-12">
       <Heading>Lets Work Together</Heading>
 
-      <p className="mt-9.5 max-w-[790px] text-xl/[1.6] text-balance text-black">
+      <p
+        className="mt-9.5 max-w-[790px] text-xl/[1.6] text-balance text-black"
+        data-aos="fade-up"
+      >
         I&apos;m always excited to take on new challenges and collaborate with
         teams who are passionate about creating exceptional user experiences.
         Whether you&apos;re a startup looking to build your first product or an

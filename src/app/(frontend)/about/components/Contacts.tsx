@@ -9,7 +9,12 @@ const Contacts = () => {
 
       <ul className="mt-9.5 space-y-6">
         {contacts.map((contact, index) => (
-          <li key={index} className="group text-xl text-black">
+          <li
+            key={index}
+            className="group text-xl text-black"
+            data-aos="fade-up"
+            data-aos-delay={index * 150}
+          >
             {contact.name}:{" "}
             <Link
               href={contact.href}

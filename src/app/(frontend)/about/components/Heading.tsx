@@ -3,7 +3,10 @@ import React, { ReactNode } from "react";
 
 const Heading = ({ children }: { children: ReactNode }) => {
   return (
-    <h1 className="font-montserrat relative w-max text-[32px] font-semibold text-black">
+    <h1
+      className="font-montserrat relative w-max text-[32px] font-semibold text-black"
+      data-aos="fade-up"
+    >
       {children}
       <span
         className={cn(

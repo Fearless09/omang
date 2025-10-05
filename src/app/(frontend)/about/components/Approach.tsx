@@ -6,7 +6,10 @@ const Approach = () => {
     <section className="wrapper mt-[150px]">
       <Heading>My Approach</Heading>
 
-      <p className="mt-12 w-full max-w-[790px] text-xl text-balance text-black">
+      <p
+        className="mt-12 w-full max-w-[790px] text-xl text-balance text-black"
+        data-aos="fade-up"
+      >
         Every project begins with research and empathy. I immerse myself in
         understanding the user&apos;s needs, pain points, and behaviors through
         interviews, surveys, and analytics. This foundation informs every design
