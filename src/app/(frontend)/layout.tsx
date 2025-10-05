@@ -2,6 +2,9 @@ import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono, Montserrat, Inter } from "next/font/google";
 import "./globals.css";
 import { ContextProvider } from "@/contexts/GlobalContext";
+import Background from "@/components/shared/Background";
+import Navbar from "@/components/shared/Navbar";
+import CTA from "@/components/shared/CTA";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -91,7 +94,14 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${montserrat.variable} ${inter.variable} antialiased`}
       >
-        <ContextProvider>{children}</ContextProvider>
+        <ContextProvider>
+          <section className="min-h-dvh w-screen overflow-clip pb-[100px]">
+            <Background />
+            <Navbar />
+            {children}
+            <CTA />
+          </section>
+        </ContextProvider>
       </body>
     </html>
   );
