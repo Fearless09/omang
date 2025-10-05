@@ -5,7 +5,7 @@ import Heading from "./Heading";
 
 const Hero = () => {
   return (
-    <section className="wrapper ipad:pt-[100px] relative z-[2] flex items-center justify-between pt-[100px]">
+    <section className="wrapper ipad:pt-[100px] relative z-[2] flex flex-col items-center justify-between gap-x-8 gap-y-20 pt-[100px] lg:flex-row">
       <main className="max-w-[700px] flex-1">
         <Heading>About Me</Heading>
 
@@ -27,6 +27,7 @@ const Hero = () => {
           "relative aspect-[2.49/2.78] w-[250px] shrink-0 rounded-3xl",
           "before:absolute before:inset-0 before:-z-[1] before:rotate-15 before:rounded-3xl before:bg-gradient-to-b before:from-[#F0B8BF] before:to-[#CEC7DB]",
         )}
+        data-aos="zoom-in-down"
       >
         <Image
           alt="Omang Thomas"

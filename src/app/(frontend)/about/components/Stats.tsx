@@ -3,7 +3,7 @@ import React from "react";
 
 const Stats = () => {
   return (
-    <section className="wrapper mt-[100px] flex flex-wrap items-stretch justify-between gap-x-5 gap-y-10">
+    <section className="wrapper mt-[100px] flex flex-wrap items-stretch justify-between gap-x-5 gap-y-8">
       {stats.map((stat, index) => (
         <div
           key={index}
@@ -14,8 +14,12 @@ const Stats = () => {
           data-aos="fade-up"
           data-aos-delay={index * 150}
         >
-          <h1 className="text-[40px]">{stat.value}</h1>
-          <p className="text-[28px] font-medium">{stat.title}</p>
+          <h1 className="text-[32px] md:text-[36px] lg:text-[40px]">
+            {stat.value}
+          </h1>
+          <p className="text-[20px] font-medium md:text-[24px] lg:text-[28px]">
+            {stat.title}
+          </p>
         </div>
       ))}
     </section>

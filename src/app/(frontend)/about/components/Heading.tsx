@@ -4,7 +4,7 @@ import React, { ReactNode } from "react";
 const Heading = ({ children }: { children: ReactNode }) => {
   return (
     <h1
-      className="font-montserrat relative w-max text-[32px] font-semibold text-black"
+      className="font-montserrat relative w-max text-[28px] font-semibold text-black md:text-[32px]"
       data-aos="fade-up"
     >
       {children}

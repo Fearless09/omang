@@ -41,7 +41,7 @@ body {
 }
 
 @utility wrapper {
-  @apply mx-auto w-full max-w-[1316px] px-4;
+  @apply mx-auto w-full max-w-[1316px] px-5;
 }
 
 @utility heading {

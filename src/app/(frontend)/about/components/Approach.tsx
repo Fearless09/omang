@@ -3,7 +3,7 @@ import Heading from "./Heading";
 
 const Approach = () => {
   return (
-    <section className="wrapper mt-[150px]">
+    <section className="wrapper mt-[100px] md:mt-[150px]">
       <Heading>My Approach</Heading>
 
       <p
