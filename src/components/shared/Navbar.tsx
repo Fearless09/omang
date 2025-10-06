@@ -44,6 +44,7 @@ const Navbar = () => {
               className={cn("transition-300 text-sm sm:text-base", {
                 "font-semibold": pathname === link.href,
               })}
+              target={link.href.startsWith("http") ? "_blank" : "_self"}
             >
               {link.name}
             </Link>
@@ -102,5 +103,8 @@ const navLinks = [
   { name: "About", href: "/about" },
   // {name: "Services", href: "#services"},
   // {name: "Portfolio", href: "#portfolio"},
-  { name: "Resume", href: "/resume" },
+  {
+    name: "Resume",
+    href: "https://drive.google.com/file/d/1KyGDeVTVJ8KUG5wuAKJk-3v5DDSvN18a/view?usp=drivesdk",
+  },
 ];
