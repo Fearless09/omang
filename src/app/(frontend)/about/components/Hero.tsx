@@ -9,7 +9,7 @@ const Hero = () => {
       <main className="max-w-[700px] flex-1">
         <Heading>About Me</Heading>
 
-        <p className="mt-12 text-xl text-balance text-black">
+        <p className="font-sf_pro mt-12 text-xl text-balance text-black">
           I&apos;m a passionate UI/UX designer with over 3 years of experience
           crafting intuitive and beautiful digital experience My approach
           combines user-centric design thinking with a deep understanding of

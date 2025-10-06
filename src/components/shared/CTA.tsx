@@ -6,11 +6,11 @@ const CTA = () => {
   return (
     <section className="mt-[100px] px-4">
       <section className="wrapper rounded-[25px] bg-gradient-to-l from-[#EEE3E7] to-[#DCEEFF] px-6 py-10 md:px-12 md:pt-[52px] md:pb-[56px]">
-        <div className="flex items-center justify-end gap-2">
+        <div className="flex items-center justify-end gap-3.5">
           <SocialLinks />
         </div>
 
-        <main className="font-inter mx-auto mt-5 w-full max-w-[688px] text-center text-[#404040]">
+        <main className="font-inter mx-auto mt-7 w-full max-w-[688px] text-center text-[#404040]">
           <h1 className="text-4xl/[1.25] font-semibold sm:text-5xl/[60px] md:text-6xl/[80px] lg:text-7xl/[100px] xl:text-8xl/[120px]">
             Have an idea? Let&apos;s talk.
           </h1>

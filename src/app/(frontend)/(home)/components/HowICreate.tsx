@@ -9,7 +9,7 @@ const HowICreate = () => {
     <section className="wrapper mt-[100px]">
       <h1 className="heading">How I Create</h1>
 
-      <main className="mt-13 grid grid-cols-1 gap-10 gap-x-5 sm:grid-cols-2 md:gap-x-10">
+      <main className="font-sf_pro mt-13 grid grid-cols-1 gap-10 gap-x-5 sm:grid-cols-2 md:gap-x-10">
         {steps.map((step, index) => (
           <div
             key={index}
@@ -20,20 +20,20 @@ const HowICreate = () => {
             data-aos="fade-up"
             data-aos-delay={index * 150}
           >
-            <div
+            <span
               className={cn(
                 "relative flex size-15 items-center justify-center rounded-full",
                 step.iconColor,
               )}
             >
-              <div
+              <span
                 className={cn(
                   "absolute size-full rounded-full blur-[10px]",
                   step.iconBg,
                 )}
               />
               <Icon icon={step.icon} className="z-[1] size-7" />
-            </div>
+            </span>
 
             <h1 className="ipad:text-2xl mt-5 text-xl font-semibold uppercase xl:text-[32px]">
               {step.title}

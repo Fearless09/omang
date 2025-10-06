@@ -7,7 +7,7 @@ const Contacts = () => {
     <section className="wrapper mt-[58px]">
       <Heading>Contact Details</Heading>
 
-      <ul className="mt-9.5 space-y-6">
+      <ul className="font-sf_pro mt-9.5 space-y-6">
         {contacts.map((contact, index) => (
           <li
             key={index}

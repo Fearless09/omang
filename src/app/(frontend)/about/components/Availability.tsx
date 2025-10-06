@@ -7,7 +7,7 @@ const Availability = () => {
       <Heading>Lets Work Together</Heading>
 
       <p
-        className="mt-9.5 max-w-[790px] text-xl/[1.6] text-balance text-black"
+        className="font-sf_pro mt-9.5 max-w-[790px] text-xl/[1.6] text-balance text-black"
         data-aos="fade-up"
       >
         I&apos;m always excited to take on new challenges and collaborate with

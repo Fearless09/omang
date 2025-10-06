@@ -7,7 +7,7 @@ const Approach = () => {
       <Heading>My Approach</Heading>
 
       <p
-        className="mt-12 w-full max-w-[790px] text-xl text-balance text-black"
+        className="font-sf_pro mt-12 w-full max-w-[790px] text-xl text-balance text-black"
         data-aos="fade-up"
       >
         Every project begins with research and empathy. I immerse myself in

@@ -13,13 +13,13 @@ const Hero = () => {
         </span>
       </h6>
 
-      <h1 className="ipad:text-[48px]/[76px] text-center text-[32px]/[48px] font-semibold sm:text-[38px]/[56px]">
+      <h1 className="ipad:text-[48px]/[76px] font-montserrat text-center text-[32px]/[48px] font-semibold sm:text-[38px]/[56px]">
         I&apos;m Omang ✌🏼 a <SpecialChars>Product Designer I</SpecialChars> help
         teams create fun, memorable,{" "}
         <SpecialChars>and human experiences</SpecialChars>. I specialized in
       </h1>
 
-      <ul className="mt-16 flex flex-wrap items-center justify-center gap-4">
+      <ul className="font-montserrat mt-16 flex flex-wrap items-center justify-center gap-4">
         {tags.map((tag, index) => (
           <li
             key={index}

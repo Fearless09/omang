@@ -36,7 +36,6 @@ const libre_bodoni = localFont({
   src: [
     {
       path: "./fonts/Libre_Bodoni/LibreBodoni-VariableFont_wght.ttf",
-      style: "normal",
     },
     {
       path: "./fonts/Libre_Bodoni/LibreBodoni-Italic-VariableFont_wght.ttf",
@@ -46,57 +45,92 @@ const libre_bodoni = localFont({
   variable: "--font-libre-bodoni",
 });
 
-// const sf_pro = localFont({
-//   src: [
-//     {
-//       path: "./fonts/sf-pro-display/SFPRODISPLAYBLACKITALIC.OTF",
-//       style: "italic",
-//       weight: "900",
-//     },
-//     {
-//       path: "./fonts/sf-pro-display/SFPRODISPLAYBOLD.OTF",
-//       style: "normal",
-//       weight: "700",
-//     },
-//     {
-//       path: "./fonts/sf-pro-display/SFPRODISPLAYHEAVYITALIC.OTF",
-//       style: "italic",
-//       weight: "800",
-//     },
-//     {
-//       path: "./fonts/sf-pro-display/SFPRODISPLAYLIGHTITALIC.OTF",
-//       style: "italic",
-//       weight: "300",
-//     },
-//     {
-//       path: "./fonts/sf-pro-display/SFPRODISPLAYMEDIUM.OTF",
-//       style: "noraml",
-//       weight: "500",
-//     },
-//     {
-//       path: "./fonts/sf-pro-display/SFPRODISPLAYREGULAR.OTF",
-//       style: "normal",
-//       weight: "400",
-//     },
-//     {
-//       path: "./fonts/sf-pro-display/SFPRODISPLAYSEMIBOLDITALIC.OTF",
-//       style: "italic",
-//       weight: "600",
-//     },
-//     {
-//       path: "./fonts/sf-pro-display/SFPRODISPLAYTHINITALIC.OTF",
-//       style: "italic",
-//       weight: "100",
-//     },
-//     {
-//       path: "./fonts/sf-pro-display/SFPRODISPLAYULTRALIGHTITALIC.OTF",
-//       style: "italic",
-//       weight: "200",
-//     },
-//   ],
-  
-//   variable: "--font-sf_pro",
-// });
+const sf_pro = localFont({
+  src: [
+    {
+      path: "./fonts/sf-pro-display/SF-Pro-Display-Thin.otf",
+      weight: "100",
+    },
+    {
+      path: "./fonts/sf-pro-display/SF-Pro-Display-ThinItalic.otf",
+      style: "italic",
+      weight: "100",
+    },
+    {
+      path: "./fonts/sf-pro-display/SF-Pro-Display-Ultralight.otf",
+      weight: "200",
+    },
+    {
+      path: "./fonts/sf-pro-display/SF-Pro-Display-UltralightItalic.otf",
+      style: "italic",
+      weight: "200",
+    },
+    {
+      path: "./fonts/sf-pro-display/SF-Pro-Display-Light.otf",
+      weight: "300",
+    },
+    {
+      path: "./fonts/sf-pro-display/SF-Pro-Display-LightItalic.otf",
+      style: "italic",
+      weight: "300",
+    },
+    {
+      path: "./fonts/sf-pro-display/SF-Pro-Display-Regular.otf",
+      weight: "400",
+    },
+    {
+      path: "./fonts/sf-pro-display/SF-Pro-Display-RegularItalic.otf",
+      style: "italic",
+      weight: "400",
+    },
+    {
+      path: "./fonts/sf-pro-display/SF-Pro-Display-Medium.otf",
+      weight: "500",
+    },
+    {
+      path: "./fonts/sf-pro-display/SF-Pro-Display-MediumItalic.otf",
+      style: "italic",
+      weight: "500",
+    },
+    {
+      path: "./fonts/sf-pro-display/SF-Pro-Display-Semibold.otf",
+      weight: "600",
+    },
+    {
+      path: "./fonts/sf-pro-display/SF-Pro-Display-SemiboldItalic.otf",
+      style: "italic",
+      weight: "600",
+    },
+    {
+      path: "./fonts/sf-pro-display/SF-Pro-Display-Bold.otf",
+      weight: "700",
+    },
+    {
+      path: "./fonts/sf-pro-display/SF-Pro-Display-BoldItalic.otf",
+      style: "italic",
+      weight: "700",
+    },
+    {
+      path: "./fonts/sf-pro-display/SF-Pro-Display-Heavy.otf",
+      weight: "800",
+    },
+    {
+      path: "./fonts/sf-pro-display/SF-Pro-Display-HeavyItalic.otf",
+      style: "italic",
+      weight: "800",
+    },
+    {
+      path: "./fonts/sf-pro-display/SF-Pro-Display-Black.otf",
+      weight: "900",
+    },
+    {
+      path: "./fonts/sf-pro-display/SF-Pro-Display-BlackItalic.otf",
+      style: "italic",
+      weight: "900",
+    },
+  ],
+  variable: "--font-sf_pro",
+});
 
 const url = process.env.NEXT_PUBLIC_URL || "http://localhost:3000";
 
@@ -164,7 +198,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${montserrat.variable} ${inter.variable} ${baloo_2.variable} ${libre_bodoni.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${montserrat.variable} ${inter.variable} ${baloo_2.variable} ${libre_bodoni.variable} ${sf_pro.variable} antialiased`}
       >
         <ContextProvider>
           <section className="min-h-dvh w-screen overflow-clip pb-[100px]">

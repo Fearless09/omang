@@ -6,7 +6,7 @@ const Skills = () => {
     <section className="wrapper mt-12">
       <Heading>Skills & Expertise</Heading>
 
-      <ul className="mt-[62px] flex max-w-[700px] flex-wrap gap-x-4 gap-y-6">
+      <ul className="font-sf_pro mt-[62px] flex max-w-[700px] flex-wrap gap-x-4 gap-y-6">
         {skills.map((skill, index) => (
           <li
             key={index}
