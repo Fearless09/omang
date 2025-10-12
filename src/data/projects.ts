@@ -13,7 +13,10 @@ export type PROJECT = {
     img: string;
     bgColor: string;
   };
-  overview: string;
+  overview: {
+    heading?: string;
+    decription: string;
+  }[];
   challenges: {
     heading?: string;
     decription: string;
@@ -26,7 +29,10 @@ export type PROJECT = {
     imgs: string[];
     bgColor: string;
   }[];
-  results: string[];
+  results: {
+    heading?: string;
+    decription: string;
+  }[];
   tech: string[];
   comingSoon?: boolean;
 };
@@ -47,8 +53,12 @@ export const projects: PROJECT[] = [
       img: "/projects/funpay/hero.png",
       bgColor: "bg-[#436CFF]",
     },
-    overview:
-      "FunPay is a cutting-edge fintech mobile application designed to revolutionize peer-to-peer money transfers across the nation. Built on a foundation of speed, security, and user-centric design, FunPay enables individuals to send and receive money instantly, eliminating the traditional barriers associated with financial transactions. In an increasingly digital economy where convenience and immediacy are paramount, FunPay positions itself as the go-to solution for seamless nationwide money transfers.",
+    overview: [
+      {
+        decription:
+          "FunPay is a cutting-edge fintech mobile application designed to revolutionize peer-to-peer money transfers across the nation. Built on a foundation of speed, security, and user-centric design, FunPay enables individuals to send and receive money instantly, eliminating the traditional barriers associated with financial transactions. In an increasingly digital economy where convenience and immediacy are paramount, FunPay positions itself as the go-to solution for seamless nationwide money transfers.",
+      },
+    ],
     challenges: [
       {
         decription:
@@ -88,9 +98,9 @@ export const projects: PROJECT[] = [
     ],
     displayImgs: [{ imgs: ["", "", ""], bgColor: "bg-[#E6EAFB]" }],
     results: [
-      "85% Satisfaction Rate",
-      "65% Increase in daily Transactions",
-      "Featured in Fintech Category",
+      { decription: "85% Satisfaction Rate" },
+      { decription: "65% Increase in daily Transactions" },
+      { decription: "Featured in Fintech Category" },
     ],
     tech: ["Design", "Fintech", "Mobile", "Figma"],
   },
@@ -109,8 +119,12 @@ export const projects: PROJECT[] = [
       img: "/projects/medshop/hero.png",
       bgColor: "bg-[#007EC9]",
     },
-    overview:
-      "Medshop is an innovative healthcare technology application designed to revolutionize how patients, caregivers, and healthcare professionals locate and purchase medical products. By bridging the gap between consumers and pharmacies through a sophisticated search platform, Medshop solves the critical problem of medication and medical product availability. The app empowers users to quickly find essential medical supplies, compare prices across multiple pharmacies, check real-time inventory, and make informed purchasing decisions—all from the convenience of their smartphone.",
+    overview: [
+      {
+        decription:
+          "Medshop is an innovative healthcare technology application designed to revolutionize how patients, caregivers, and healthcare professionals locate and purchase medical products. By bridging the gap between consumers and pharmacies through a sophisticated search platform, Medshop solves the critical problem of medication and medical product availability. The app empowers users to quickly find essential medical supplies, compare prices across multiple pharmacies, check real-time inventory, and make informed purchasing decisions—all from the convenience of their smartphone.",
+      },
+    ],
     challenges: [
       {
         decription:
@@ -173,9 +187,9 @@ export const projects: PROJECT[] = [
     ],
     displayImgs: [{ imgs: ["", "", ""], bgColor: "bg-[#0E3653]" }],
     results: [
-      "85% Satisfaction Rate",
-      "60% increase in daily active users",
-      "Featured in App Store Health & Fitness category",
+      { decription: "85% Satisfaction Rate" },
+      { decription: "60% increase in daily active users" },
+      { decription: "Featured in App Store Health & Fitness category" },
     ],
     tech: ["Design", "Health & Healthcare", "Mobile", "Figma"],
   },
@@ -194,8 +208,12 @@ export const projects: PROJECT[] = [
       img: "/projects/boston/hero.png",
       bgColor: "bg-[#32BB77]",
     },
-    overview:
-      "Our hailing mobile app redefines transportation, offering a seamless, efficient, and transformative experience for users. It addresses industry challenges, providing a solution that prioritizes  convenience, safety, and reliability in the dynamic transportation landscape.",
+    overview: [
+      {
+        decription:
+          "Our hailing mobile app redefines transportation, offering a seamless, efficient, and transformative experience for users. It addresses industry challenges, providing a solution that prioritizes  convenience, safety, and reliability in the dynamic transportation landscape.",
+      },
+    ],
     challenges: [
       {
         decription:
@@ -240,9 +258,9 @@ export const projects: PROJECT[] = [
     ],
     displayImgs: [{ imgs: [""], bgColor: "bg-[#9BE6C1]" }],
     results: [
-      "85% Satisfaction Rate",
-      "65% Increase in daily Transportation Users",
-      "Featured in Transportation Category",
+      { decription: "85% Satisfaction Rate" },
+      { decription: "65% Increase in daily Transportation Users" },
+      { decription: "Featured in Transportation Category" },
     ],
     tech: ["Design", "Transportation", "Mobile", "Figma"],
   },
@@ -261,11 +279,11 @@ export const projects: PROJECT[] = [
       img: "",
       bgColor: "",
     },
-    overview: "",
+    overview: [{ heading: "", decription: "" }],
     challenges: [{ heading: "", decription: "" }],
     solutions: [{ heading: "", decription: "" }],
     displayImgs: [{ imgs: [""], bgColor: "" }],
-    results: [""],
+    results: [{ decription: "" }],
     tech: [""],
     comingSoon: true,
   },

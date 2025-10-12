@@ -5,7 +5,7 @@ import Heading from "./Heading";
 
 const Hero = () => {
   return (
-    <section className="wrapper ipad:pt-[100px] relative z-[2] flex flex-col items-center justify-between gap-x-8 gap-y-22 pt-[100px] lg:flex-row">
+    <section className="wrapper relative z-[2] flex flex-col items-center justify-between gap-x-8 gap-y-22 pt-[100px] lg:flex-row">
       <main className="max-w-[700px] flex-1">
         <Heading>About Me</Heading>
 

@@ -17,7 +17,10 @@ const Navbar = () => {
   const pathname = usePathname();
 
   return (
-    <header className="wrapper relative z-10 flex items-center justify-between py-7">
+    <header
+      className="wrapper relative z-10 flex items-center justify-between py-7"
+      id="navbar"
+    >
       <div className="hidden shrink-0 items-center gap-4 md:flex">
         <span className="relative h-[68px] w-[58px] overflow-clip rounded-[100%]">
           <Image

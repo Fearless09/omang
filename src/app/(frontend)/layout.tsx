@@ -201,10 +201,10 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} ${montserrat.variable} ${inter.variable} ${baloo_2.variable} ${libre_bodoni.variable} ${sf_pro.variable} antialiased`}
       >
         <ContextProvider>
-          <section className="min-h-dvh w-screen overflow-clip">
+          <section className="flex min-h-dvh w-screen flex-col overflow-clip">
             <Background />
             <Navbar />
-            {children}
+            <section className="flex-1">{children}</section>
             <Footer />
           </section>
         </ContextProvider>

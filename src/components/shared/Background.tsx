@@ -3,7 +3,7 @@ import React, { ComponentProps, FC } from "react";
 
 const Background = () => {
   return (
-    <section className="wrapper relative">
+    <section className="wrapper relative" id="background">
       <Oval className="-top-4.5 left-[5%] bg-[#C7C5E2]" />
       <Oval className="left-[25%] bg-[#FFA3EC]" />
       <Oval className="left-1/2" />

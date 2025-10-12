@@ -26,11 +26,13 @@
 
 @keyframes blur {
   0%,
+  5%,
+  95%,
   100% {
-    filter: blur(70px);
+    filter: blur(50px);
   }
   50% {
-    filter: blur(120px);
+    filter: blur(100px);
   }
 }
 

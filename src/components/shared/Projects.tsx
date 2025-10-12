@@ -19,7 +19,11 @@ const Projects: Props = ({ className, ...props }) => {
         <Link
           key={index}
           className={cn("group relative overflow-clip")}
-          href={project.comingSoon ? "#" : `/${project.id}/${project.title}`}
+          href={
+            project.comingSoon
+              ? "#"
+              : `/project?id=${project.id}&title=${project.title}`
+          }
           data-aos="fade-up"
           data-aos-delay={index * 150}
         >
