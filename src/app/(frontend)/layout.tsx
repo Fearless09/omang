@@ -5,7 +5,7 @@ import "./globals.css";
 import { ContextProvider } from "@/contexts/GlobalContext";
 import Background from "@/components/shared/Background";
 import Navbar from "@/components/shared/Navbar";
-import CTA from "@/components/shared/CTA";
+import Footer from "@/components/shared/Footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -201,11 +201,11 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} ${montserrat.variable} ${inter.variable} ${baloo_2.variable} ${libre_bodoni.variable} ${sf_pro.variable} antialiased`}
       >
         <ContextProvider>
-          <section className="min-h-dvh w-screen overflow-clip pb-[100px]">
+          <section className="min-h-dvh w-screen overflow-clip">
             <Background />
             <Navbar />
             {children}
-            <CTA />
+            <Footer />
           </section>
         </ContextProvider>
       </body>

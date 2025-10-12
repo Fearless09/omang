@@ -6,6 +6,7 @@ import Works from "./components/Works";
 import Skills from "./components/Skills";
 import Availability from "./components/Availability";
 import Contacts from "./components/Contacts";
+import CTA from "@/components/shared/CTA";
 
 const Page = () => {
   return (
@@ -17,6 +18,7 @@ const Page = () => {
       <Skills />
       <Availability />
       <Contacts />
+      <CTA />
     </section>
   );
 };

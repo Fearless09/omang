@@ -6,7 +6,7 @@ const Works = () => {
   return (
     <section className="wrapper mt-[88px]">
       <Heading>Featured Work</Heading>
-      <Projects className="mt-[62px]" />
+      <Projects className="mt-13" />
     </section>
   );
 };

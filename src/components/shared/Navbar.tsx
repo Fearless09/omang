@@ -64,16 +64,22 @@ const Navbar = () => {
 
 export default Navbar;
 
-export const SocialLinks = () => {
+export const SocialLinks = ({ sm }: { sm?: boolean }) => {
   return socialLinks.map((link, index) => (
     <React.Fragment key={index}>
       <Link
         href={link.href}
         target="_blank"
-        className="transition-300 flex size-11 items-center justify-center rounded-full bg-black text-white hover:bg-black/80 active:scale-98"
+        className={cn(
+          "transition-300 flex size-11 items-center justify-center rounded-full bg-black text-white hover:bg-black/80 active:scale-98",
+          { "size-7.5": sm },
+        )}
         data-tooltip-id={link.name}
       >
-        <HugeiconsIcon icon={link.icon} className="size-6" />
+        <HugeiconsIcon
+          icon={link.icon}
+          className={cn("size-6", { "size-3.5": sm })}
+        />
       </Link>
       <Tooltip id={link.name} content={link.name} />
     </React.Fragment>
@@ -98,7 +104,7 @@ export const socialLinks = [
   },
 ];
 
-const navLinks = [
+export const navLinks = [
   { name: "Home", href: "/" },
   { name: "About", href: "/about" },
   // {name: "Services", href: "#services"},

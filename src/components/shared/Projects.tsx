@@ -1,7 +1,8 @@
 import { cn } from "@/lib/utils";
-import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 import React, { ComponentProps, FC } from "react";
+import { projects } from "@/data/projects";
+import Link from "next/link";
 
 type Props = FC<ComponentProps<"main">>;
 
@@ -9,125 +10,62 @@ const Projects: Props = ({ className, ...props }) => {
   return (
     <main
       className={cn(
-        "mt-14 grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3",
+        "mt-12 grid grid-cols-1 gap-x-10 gap-y-14 lg:grid-cols-2 2xl:grid-cols-3",
         className,
       )}
       {...props}
     >
       {projects.map((project, index) => (
-        <div
+        <Link
           key={index}
-          className={cn(
-            "group relative aspect-[4.26/5] overflow-clip rounded-[12px] border-2 border-white bg-[#F3EAF080] pt-10",
-            project.bg,
-          )}
+          className={cn("group relative overflow-clip")}
+          href={project.comingSoon ? "#" : `/${project.id}/${project.title}`}
           data-aos="fade-up"
           data-aos-delay={index * 150}
         >
-          <div
-            className={cn(
-              "transition-300 relative h-full group-hover:scale-103",
-              {
-                "ms-9 aspect-[5.87/4.18]": project.desktop,
-                "mx-auto aspect-[2.9/5.25]": !project.desktop,
-              },
-            )}
-          >
+          {/* Mockup */}
+          <div className="relative aspect-[6.33/5.77] overflow-clip rounded-[10px] border-2 border-white bg-[#F3EAF080]">
             <Image
               alt={project.title}
-              src={"/projects" + project.img}
+              src={project.mockup}
               fill
-              priority
+              className="transition-300 object-cover object-center group-hover:scale-105"
             />
-          </div>
 
-          <div className="absolute inset-x-0 bottom-0 flex cursor-pointer items-end justify-between gap-3.5 bg-white/25 px-4 pt-5 pb-4 backdrop-blur-[48px]">
-            <div className="flex-1">
-              <h2 className="font-libre-bodoni text-xl font-bold uppercase">
-                {project.title}
-              </h2>
-              <p className="font-inter mt-2 line-clamp-2 text-sm/[150%] font-normal text-balance text-black">
-                {project.subtitle}
+            {project.comingSoon && (
+              <p className="absolute top-1/2 left-1/2 -translate-1/2 rounded-xl border border-black/7 bg-white px-7 py-2.5 font-medium shadow-2xl">
+                Coming Soon.
               </p>
-            </div>
-
-            <div className="transition-300 flex size-9 shrink-0 items-center justify-center rounded-full bg-black text-white group-hover:size-9.5 sm:size-0">
-              <ArrowRight />
-            </div>
+            )}
           </div>
 
-          {project.comingSoon && (
-            <p className="absolute top-1/2 left-1/2 -translate-1/2 rounded-xl bg-white px-7 py-2.5 font-medium shadow-xl">
-              Coming Soon.
-            </p>
-          )}
-        </div>
+          <div className="mt-6 flex items-center justify-between">
+            <h5 className="font-sf_pro text-2xl font-semibold text-black">
+              {project.title}
+            </h5>
+            <h6 className="font-sf_pro text-xl text-[#8F8F8F]">
+              {project.year}
+            </h6>
+          </div>
+
+          <p className="font-sf_pro mt-4 text-xl text-[#8F8F8F]">
+            {project.subtitle}
+          </p>
+
+          <ul className="mt-4 flex items-center gap-3">
+            {project.tags.map((tag, index) => (
+              <li
+                key={index}
+                className="font-sf_pro transition-300 rounded-[8px] bg-[#BDCDCC] px-3 py-1.5 text-sm tracking-wider text-black hover:bg-[#DBEEFF]"
+              >
+                {tag}
+              </li>
+            ))}
+          </ul>
+        </Link>
       ))}
     </main>
   );
 };
 
 export default Projects;
-
-type PROJECT = {
-  bg: string;
-  img: string;
-  title: string;
-  subtitle: string;
-  href: string;
-  desktop?: boolean;
-  comingSoon?: boolean;
-};
-
-const projects: PROJECT[] = [
-  {
-    bg: "bg-[#EFF6FF]",
-    img: "/de_shadows.png",
-    title: "DE_SHADOWS",
-    subtitle:
-      "A platform for taking stocks inventory for Gadgets and Electronics.",
-    href: "",
-    desktop: true,
-  },
-  {
-    bg: "bg-[#E8E8E8]",
-    img: "/montana.png",
-    title: "MONTANA",
-    subtitle:
-      "A platform thet Revolutionize the dining experience through innovative design and features.",
-    href: "/healthcare.png",
-  },
-  {
-    bg: "bg-[#E2E8FF]",
-    img: "/medshop.png",
-    title: "MEDSHOP",
-    subtitle:
-      "A platform that connect users with other pharmacists and reach out in case of an emergency.",
-    href: "",
-  },
-  {
-    bg: "bg-[#F3EAF080]",
-    img: "/funpay.png",
-    title: "FUNPAY",
-    subtitle:
-      "A fintech application designed to simplify international money transfers.",
-    href: "",
-  },
-  {
-    bg: "bg-[#CFEAC1]",
-    img: "/healthcare.png",
-    title: "HEALTHCARE",
-    subtitle:
-      "A healthcare mobile application for users to monitor their heartbeat rate, blood pressure etc.",
-    href: "",
-  },
-  {
-    bg: "bg-[#FFF5F1]",
-    img: "/omegainbox.png",
-    title: "OMEGAINBOX",
-    subtitle:
-      "OmegaInbox is a sophisticated email marketing web application designed to empower businesses to cre..",
-    href: "",
-    desktop: true,
-  },
-];

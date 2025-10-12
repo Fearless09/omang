@@ -17,8 +17,21 @@
   --font-baloo-2: var(--font-baloo-2);
   --font-libre-bodoni: var(--font-libre-bodoni);
   --font-sf_pro: var(--font-sf_pro);
+  --font-monospace: Monospace, serif;
 
   --breakpoint-ipad: 992px;
+
+  --animate-blur: blur 16s linear infinite;
+}
+
+@keyframes blur {
+  0%,
+  100% {
+    filter: blur(70px);
+  }
+  50% {
+    filter: blur(120px);
+  }
 }
 
 /* @media (prefers-color-scheme: dark) {
