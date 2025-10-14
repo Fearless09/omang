@@ -10,7 +10,7 @@ const Showcase = ({ displayImgs }: PROJECT) => {
         <div
           key={index}
           className={cn(
-            "relative flex items-center justify-evenly gap-5 rounded-xl px-5 py-15",
+            "relative flex items-center justify-evenly gap-5 rounded-xl px-5 py-10",
             displayImg.bgColor,
           )}
           data-aos="fade-up"
