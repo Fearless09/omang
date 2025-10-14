@@ -21,18 +21,22 @@ const Intro = ({ category, client, role, subtitle, title, year }: PROJECT) => {
       </button>
 
       <div className="mt-6 flex items-center justify-between">
-        <h1 className="text-6xl font-medium text-black">{title}</h1>
-        <h6 className="text-base font-semibold text-[#8F8F8F]">{year}</h6>
+        <h1 className="text-4xl font-medium text-black sm:text-5xl md:text-6xl">
+          {title}
+        </h1>
+        <h6 className="text-sm font-semibold text-[#8F8F8F] sm:text-base">
+          {year}
+        </h6>
       </div>
 
-      <p className="mt-6 text-xl text-[#8F8F8F]">{subtitle}</p>
+      <p className="mt-6 text-lg text-[#8F8F8F] sm:text-xl">{subtitle}</p>
 
       <hr className="my-8 border-[#E5E5E5]" />
 
       <main className="flex items-start justify-between">
-        <TextBlock heading="Client" value={client} />
-        <TextBlock heading="Role" value={role} />
-        <TextBlock heading="Category" value={category} />
+        <TextBlock heading="Client" value={client} index={0} />
+        <TextBlock heading="Role" value={role} index={1} />
+        <TextBlock heading="Category" value={category} index={2} />
       </main>
 
       <hr className="mt-7 border-[#E5E5E5]" />
@@ -42,9 +46,21 @@ const Intro = ({ category, client, role, subtitle, title, year }: PROJECT) => {
 
 export default Intro;
 
-const TextBlock = ({ heading, value }: { heading: string; value: string }) => {
+const TextBlock = ({
+  heading,
+  value,
+  index,
+}: {
+  heading: string;
+  value: string;
+  index: number;
+}) => {
   return (
-    <div className="text-base">
+    <div
+      className="text-sm sm:text-base"
+      data-aos="fade-up"
+      data-aos-delay={index * 100}
+    >
       <h5 className="text-[#8F8F8F]">{heading}</h5>
       <p className="mt-1.5 font-medium text-black">{value}</p>
     </div>

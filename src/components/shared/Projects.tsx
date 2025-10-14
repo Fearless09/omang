@@ -18,7 +18,7 @@ const Projects: Props = ({ className, ...props }) => {
       {projects.map((project, index) => (
         <Link
           key={index}
-          className={cn("group relative overflow-clip")}
+          className={cn("group relative")}
           href={
             project.comingSoon
               ? "#"
@@ -61,6 +61,8 @@ const Projects: Props = ({ className, ...props }) => {
               <li
                 key={index}
                 className="font-sf_pro transition-300 rounded-[8px] bg-[#BDCDCC] px-3 py-1.5 text-sm tracking-wider text-black hover:bg-[#DBEEFF]"
+                data-aos="fade-up"
+                data-aos-delay={index * 100}
               >
                 {tag}
               </li>
