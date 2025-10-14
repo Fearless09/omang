@@ -18,14 +18,16 @@ const CTA = () => {
       <div className="relative z-1 flex flex-col items-center justify-center text-center text-pretty">
         <Heart className="size-10 fill-[#D0527F] stroke-[#D0527F] sm:size-12" />
 
-        <h1 className="mt-8 text-5xl font-semibold text-[#0E3653]">
+        <h1 className="mt-8 text-3xl font-semibold text-[#0E3653] sm:text-4xl md:text-5xl">
           Thanks for watching
         </h1>
 
-        <p className="mt-5 text-xl text-[#8E8E8E]">
-          Open to working on projects with you, contact via email
-        </p>
-        <p className="mt-3 text-xl text-[#8E8E8E]">omangthomas001@gmail.com</p>
+        <div className="text-base sm:text-lg md:text-xl">
+          <p className="mt-5 text-[#8E8E8E]">
+            Open to working on projects with you, contact via email
+          </p>
+          <p className="mt-3 text-[#8E8E8E]">omangthomas001@gmail.com</p>
+        </div>
 
         <ul className="mt-6 flex items-center gap-3.5">
           <SocialLinks />

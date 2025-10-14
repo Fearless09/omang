@@ -6,6 +6,7 @@ import { cn } from "@/lib/utils";
 import Image from "next/image";
 import Tech from "./components/Tech";
 import CTA from "./components/CTA";
+import Showcase from "./components/Showcase";
 
 const ProjectPage = async ({
   searchParams,
@@ -49,7 +50,7 @@ const ProjectPage = async ({
       <SectionBlock title="The Challenge" data={project.challenges} />
       <SectionBlock title="The Solution" data={project.solutions} />
 
-      {/* Images */}
+      <Showcase {...project} />
 
       <SectionBlock title="Result" data={project.results} />
 

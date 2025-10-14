@@ -96,7 +96,32 @@ export const projects: PROJECT[] = [
           "Clear, upfront fee structures with competitive rates that make the service accessible for transactions of all sizes.",
       },
     ],
-    displayImgs: [{ imgs: ["", "", ""], bgColor: "bg-[#E6EAFB]" }],
+    displayImgs: [
+      {
+        imgs: [
+          "/projects/funpay/1.png",
+          "/projects/funpay/2.png",
+          "/projects/funpay/3.png",
+        ],
+        bgColor: "bg-[#E6EAFB]",
+      },
+      {
+        imgs: [
+          "/projects/funpay/4.png",
+          "/projects/funpay/5.png",
+          "/projects/funpay/6.png",
+        ],
+        bgColor: "bg-[#E6EAFB]",
+      },
+      {
+        imgs: [
+          "/projects/funpay/7.png",
+          "/projects/funpay/8.png",
+          "/projects/funpay/9.png",
+        ],
+        bgColor: "bg-[#E6EAFB]",
+      },
+    ],
     results: [
       { decription: "85% Satisfaction Rate" },
       { decription: "65% Increase in daily Transactions" },
@@ -185,7 +210,40 @@ export const projects: PROJECT[] = [
           "Connectivity Barriers: Many users in areas with poor internet connectivity cannot access online pharmacy information when they need it the most.",
       },
     ],
-    displayImgs: [{ imgs: ["", "", ""], bgColor: "bg-[#0E3653]" }],
+    displayImgs: [
+      {
+        imgs: [
+          "/projects/medshop/1.png",
+          "/projects/medshop/2.png",
+          "/projects/medshop/3.png",
+        ],
+        bgColor: "bg-[#0E3653]",
+      },
+      {
+        imgs: [
+          "/projects/medshop/4.png",
+          "/projects/medshop/5.png",
+          "/projects/medshop/6.png",
+        ],
+        bgColor: "bg-[#0E3653]",
+      },
+      {
+        imgs: [
+          "/projects/medshop/7.png",
+          "/projects/medshop/8.png",
+          "/projects/medshop/9.png",
+        ],
+        bgColor: "bg-[#007EC9]",
+      },
+      {
+        imgs: [
+          "/projects/medshop/10.png",
+          "/projects/medshop/11.png",
+          "/projects/medshop/12.png",
+        ],
+        bgColor: "bg-[#007EC9]",
+      },
+    ],
     results: [
       { decription: "85% Satisfaction Rate" },
       { decription: "60% increase in daily active users" },
@@ -256,7 +314,32 @@ export const projects: PROJECT[] = [
           "The goal is to create a hailing solution that not only optimizes the process of securing transportation but also ensures a positive and reliable experience for users, ultimately transforming the way people approach and perceive transportation services, technology to enhance the user experience, ensuring secure, hassle-free rides that empower passengers.",
       },
     ],
-    displayImgs: [{ imgs: [""], bgColor: "bg-[#9BE6C1]" }],
+    displayImgs: [
+      {
+        imgs: [
+          "/projects/boston/1.png",
+          "/projects/boston/2.png",
+          "/projects/boston/3.png",
+        ],
+        bgColor: "bg-[#9BE6C1]",
+      },
+      {
+        imgs: [
+          "/projects/boston/4.png",
+          "/projects/boston/5.png",
+          "/projects/boston/6.png",
+        ],
+        bgColor: "bg-[#9BE6C1]",
+      },
+      {
+        imgs: [
+          "/projects/boston/7.png",
+          "/projects/boston/8.png",
+          "/projects/boston/9.png",
+        ],
+        bgColor: "bg-[#9BE6C1]",
+      },
+    ],
     results: [
       { decription: "85% Satisfaction Rate" },
       { decription: "65% Increase in daily Transportation Users" },
