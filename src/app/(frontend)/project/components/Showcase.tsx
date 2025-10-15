@@ -18,7 +18,9 @@ const Showcase = ({ displayImgs }: PROJECT) => {
           {displayImg.imgs.map((img, imgIndex) => (
             <div
               key={imgIndex}
-              className={cn("relative aspect-[2.74/5.6] max-w-[274px] flex-1")}
+              className={cn(
+                "relative aspect-[2.74/5.6] max-w-[274px] flex-1 drop-shadow-xl drop-shadow-black/50",
+              )}
               data-aos="fade-up"
               data-aos-delay={imgIndex * 150}
             >

@@ -5,15 +5,15 @@ import React, { ComponentProps, FC } from "react";
 
 const Hero = () => {
   return (
-    <section className="wrapper ipad:pt-[100px] relative z-[2] max-w-[970px] pt-[100px]">
-      <h6 className="mx-auto mb-6 flex w-max items-center gap-1.5 rounded-full border border-white/20 bg-white/25 px-4.5 py-2.5 backdrop-blur-md">
-        <span className="size-1.5 rounded-full bg-black" />
+    <section className="wrapper ipad:pt-[100px] relative z-[2] max-w-[1020px] pt-[100px]">
+      <h6 className="mx-auto mb-6 flex w-max items-center gap-1.5 rounded-full border border-white/20 bg-white/25 px-4.5 py-2 backdrop-blur-md">
+        <span className="size-2 rounded-full bg-black" />
         <span className="font-montserrat text-sm font-medium text-black">
           Available For Project And Fulltime Role
         </span>
       </h6>
 
-      <h1 className="ipad:text-[48px]/[76px] font-montserrat text-center text-[32px]/[48px] font-semibold sm:text-[38px]/[56px]">
+      <h1 className="ipad:text-[48px]/[80px] font-montserrat text-center text-[32px]/[50px] font-semibold text-pretty sm:text-[38px]/[60px]">
         I&apos;m Omang ✌🏼 a <SpecialChars>Product Designer I</SpecialChars> help
         teams create fun, memorable,{" "}
         <SpecialChars>and human experiences</SpecialChars>. I specialized in

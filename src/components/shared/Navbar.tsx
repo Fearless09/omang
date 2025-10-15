@@ -52,7 +52,7 @@ const Navbar = () => {
               {link.name}
             </Link>
             {pathname === link.href && (
-              <span className="absolute left-1/2 block size-1.5 -translate-x-1/2 animate-pulse rounded-full bg-[#F5A7BC]" />
+              <span className="absolute left-1/2 block size-2 -translate-x-1/2 animate-pulse rounded-full bg-[#F5A7BC]" />
             )}
           </li>
         ))}

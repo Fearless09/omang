@@ -19,9 +19,10 @@
   --font-sf_pro: var(--font-sf_pro);
   --font-monospace: Monospace, serif;
 
-  --breakpoint-ipad: 992px;
+  --breakpoint-ipad: 62rem;
 
   --animate-blur: blur 16s linear infinite;
+  --animate-slide-up: slide-up 20s linear infinite;
 }
 
 @keyframes blur {
@@ -33,6 +34,12 @@
   }
   50% {
     filter: blur(150px);
+  }
+}
+
+@keyframes slide-up {
+  to {
+    transform: translateY(-100%);
   }
 }
 
