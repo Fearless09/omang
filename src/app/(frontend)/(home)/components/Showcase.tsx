@@ -11,16 +11,13 @@ const Showcase = () => {
       {showcases.map((showcase, index) => (
         <section
           className={cn(
-            "relative flex aspect-[13.16/7.5] max-h-[725] justify-between gap-8 overflow-clip rounded-[14px] border-2 border-white",
+            "relative flex aspect-[13.16/7.5] max-h-[725] justify-between overflow-clip rounded-[14px] border-2 border-white",
             showcase.bg,
           )}
           key={index}
         >
           {showcase.imgs.map((img, imgIndex) => (
-            <div
-              className="-ml-10 max-w-[calc(50%-10px)] rotate-12"
-              key={imgIndex}
-            >
+            <div className="-ml-5 max-w-1/2 rotate-12 md:-ml-10" key={imgIndex}>
               {Array.from({ length: 2 }).map((_, arrIndex) => (
                 <Image
                   key={arrIndex}
