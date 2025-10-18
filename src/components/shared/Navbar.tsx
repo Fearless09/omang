@@ -114,6 +114,6 @@ export const navLinks = [
   // {name: "Portfolio", href: "#portfolio"},
   {
     name: "Resume",
-    href: "https://drive.google.com/file/d/1KyGDeVTVJ8KUG5wuAKJk-3v5DDSvN18a/view?usp=drivesdk",
+    href: "https://drive.google.com/file/d/1ZCCvmYhzmLoKQZqUKXmwFzPQrxJdjaWr/view?usp=drivesdk",
   },
 ];

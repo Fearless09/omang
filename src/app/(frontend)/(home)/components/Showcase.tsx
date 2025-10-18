@@ -11,7 +11,7 @@ const Showcase = () => {
       {showcases.map((showcase, index) => (
         <section
           className={cn(
-            "relative flex aspect-[13.16/7.5] max-h-[725] justify-between overflow-clip rounded-[14px] border-2 border-white",
+            "relative flex aspect-[13.16/7.5] max-h-[725] justify-between overflow-clip rounded-[10px] border-2 border-white md:rounded-[14px]",
             showcase.bg,
           )}
           key={index}
