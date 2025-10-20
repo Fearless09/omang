@@ -22,7 +22,8 @@
   --breakpoint-ipad: 62rem;
 
   --animate-blur: blur 16s linear infinite;
-  --animate-slide-up: slide-up 20s linear infinite;
+  --animate-slide-up: slide-up var(--animation-duration, 20s)
+    var(--animation-direction, normal) linear infinite;
 }
 
 @keyframes blur {

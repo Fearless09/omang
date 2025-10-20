@@ -25,44 +25,18 @@ const Showcase = () => {
                   src={img}
                   width={1532}
                   height={4096}
-                  className={cn("animate-slide-up relative mt-5 h-max flex-1", {
-                    "[animation-direction:reverse]": imgIndex === 1,
-                  })}
+                  className={cn(
+                    "animate-slide-up relative mt-5 h-max flex-1 [--animation-duration:50s]",
+                    {
+                      "[--animation-direction:reverse]": imgIndex === 1,
+                    },
+                  )}
                 />
               ))}
             </div>
           ))}
         </section>
       ))}
-    </section>
-  );
-
-  return (
-    <section className="wrapper mt-[100px] overflow-hidden">
-      <section className="overflow-clip">
-        <Carousel
-          autoplay
-          arrows={true}
-          className="aspect-[13.16/7.5] w-full overflow-clip rounded-[14px] border-2 border-white"
-        >
-          {slides.map((slide, index) => (
-            <main
-              className={cn(
-                "relative aspect-[13.16/7.5] min-w-full gap-3 bg-[#E3FFF0]",
-                slide.color,
-              )}
-              key={index}
-            >
-              <Image
-                alt={slide.img}
-                src={"/showcase" + slide.img}
-                fill
-                priority
-              />
-            </main>
-          ))}
-        </Carousel>
-      </section>
     </section>
   );
 };
