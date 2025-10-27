@@ -45,8 +45,3 @@ export default Showcase;
 const showcases = [
   { bg: "bg-[#E3FFF0]", imgs: ["/showcase/s1.png", "/showcase/s2.png"] },
 ];
-
-const slides = [
-  { id: 1, color: "bg-[#E3FFF0]", img: "/f.png" },
-  { id: 2, color: "bg-[#F2ECE2]", img: "/d.png" },
-];

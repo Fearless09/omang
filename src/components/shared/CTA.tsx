@@ -1,7 +1,6 @@
 import React from "react";
 import { SocialLinks } from "./Navbar";
 import Link from "next/link";
-import { PhoneIcon } from "lucide-react";
 
 const CTA = () => {
   return (
@@ -39,6 +38,5 @@ const CTA = () => {
 };
 
 export default CTA;
-
 
 // Hi, I am desing a portfolio for a ui/ux designer, I want you to help me design a page that list of the selected works of the designer in card format, when the card is click it should take me to the work page that give me the details about the work/project. Can you do this? Thanks
