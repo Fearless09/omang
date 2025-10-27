@@ -24,6 +24,10 @@
   --animate-blur: blur 16s linear infinite;
   --animate-slide-up: slide-up var(--animation-duration, 20s)
     var(--animation-direction, normal) linear infinite;
+  --animate-specialization-x: specialization-x var(--animation-duration, 3s)
+    var(--animation-direction, alternate) ease-in-out forwards infinite;
+  --animate-specialization-y: specialization-y var(--animation-duration, 3s)
+    var(--animation-direction, alternate) ease-in-out forwards infinite;
 }
 
 @keyframes blur {
@@ -41,6 +45,23 @@
 @keyframes slide-up {
   to {
     transform: translateY(-100%);
+  }
+}
+
+@keyframes specialization-x {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(100%);
+  }
+}
+@keyframes specialization-y {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(100%);
   }
 }
 

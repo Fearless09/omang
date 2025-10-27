@@ -18,7 +18,7 @@ const Navbar = () => {
 
   return (
     <header
-      className="wrapper relative z-10 flex items-center justify-between py-7"
+      className="wrapper relative z-10 flex items-center justify-between py-4"
       id="navbar"
     >
       <div className="hidden shrink-0 items-center gap-4 md:flex">
@@ -39,7 +39,7 @@ const Navbar = () => {
         </div>
       </div>
 
-      <ul className="fixed top-5 left-1/2 flex h-14 w-full max-w-[250px] -translate-x-1/2 items-center justify-between gap-3 rounded-full bg-black px-8 py-3.5 text-white sm:max-w-[300px] sm:px-12 sm:py-5 md:top-auto">
+      <ul className="fixed top-5 left-1/2 flex h-14 w-full max-w-[250px] -translate-x-1/2 items-center justify-between gap-3 rounded-full bg-black px-8 pt-3 pb-3.5 text-white sm:max-w-[300px] sm:px-12 sm:pt-4.5 sm:pb-5 md:top-auto">
         {navLinks.map((link, index) => (
           <li key={index} className="relative shrink-0">
             <Link

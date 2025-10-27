@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React from "react";
 import { projects } from "@/data/projects";
 import { notFound } from "next/navigation";
 import Intro from "./components/Intro";

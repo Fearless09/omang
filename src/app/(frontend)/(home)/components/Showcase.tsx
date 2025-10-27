@@ -2,7 +2,6 @@
 
 import { cn } from "@/lib/utils";
 import Image from "next/image";
-import { Carousel } from "nuka-carousel";
 import React from "react";
 
 const Showcase = () => {
