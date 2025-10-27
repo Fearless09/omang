@@ -14,7 +14,7 @@ const Hero = () => {
         </span>
       </h6>
 
-      <h1 className="font-montserrat mx-auto w-full max-w-[756px] text-center text-[clamp(36px,6.5vw,120px)]/[clamp(40px,6.5vw,124px)] font-extrabold text-pretty">
+      <h1 className="font-montserrat mx-auto w-full max-w-[756px] text-center text-[clamp(42px,6.5vw,120px)]/[clamp(44px,6.5vw,124px)] font-extrabold text-pretty">
         USER
         <br />
         EXPERIENCE
@@ -22,7 +22,7 @@ const Hero = () => {
         DESIGNER
       </h1>
 
-      <main className="font-inter mx-auto mt-5 flex w-full max-w-[756px] items-center justify-between text-sm/[20px] font-semibold text-black md:text-[15px]/[25px]">
+      <main className="font-inter mx-auto mt-5 flex w-full max-w-[756px] items-center justify-between text-xs/[16px] font-semibold text-black md:text-[15px]/[25px]">
         <span>
           CURRENTLY CRAFTING
           <br />
