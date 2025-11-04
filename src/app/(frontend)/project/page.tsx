@@ -21,7 +21,7 @@ const ProjectPage = async ({
     (project) => project.id === filters.id && project.title === filters.title,
   );
 
-  if (!project) {
+  if (!project || project.comingSoon) {
     return notFound();
   }
 
@@ -86,7 +86,7 @@ const SectionBlock = ({
             {item.heading && (
               <h6 className="mt-6 font-medium text-black">{item.heading}</h6>
             )}
-            <p className="mt-3.5">{item.decription}</p>
+            <p className="mt-3.5 whitespace-pre-line">{item.decription}</p>
           </div>
         ))}
       </div>

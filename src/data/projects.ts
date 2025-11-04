@@ -1,3 +1,5 @@
+import { v4 as uuidv4 } from "uuid";
+
 export type PROJECT = {
   id: string;
   title: string;
@@ -39,7 +41,81 @@ export type PROJECT = {
 
 export const projects: PROJECT[] = [
   {
-    id: "1",
+    id: "aae848a1-0d39-4f46-8ab7-b338a0e2cae2",
+    title: "PRODUCT DETAILS PAGE",
+    subtitle: "Design to simplify international money transfer",
+    mockup: "/projects/product-details/mockup.png",
+    tags: ["Design", "E-commerce", "Web"],
+    platform: "web",
+    year: "2025",
+    client: "Coalition Technology",
+    role: "Lead Product Designer",
+    category: "Web App",
+    hero: {
+      img: "",
+      bgColor: "",
+    },
+    overview: [
+      {
+        decription:
+          "The camera product page is designed with a clean and modern layout that highlights the product's key features. At the top, there's a large, high-quality image of the camera with a zoom-in option. Below it, users can find a short product description, specifications, price, and “Add to Cart” button. A section for customer reviews and related accessories appears at the bottom. The design focuses on simplicity, easy navigation, and a visually appealing presentation to enhance the shopping experience.",
+      },
+    ],
+    challenges: [
+      {
+        decription:
+          "Balancing Visuals and Performance: High-quality images are essential for showcasing the camera, but large files can slow down page loading.",
+      },
+      {
+        decription:
+          "Responsive Design: Ensuring the layout looks perfect on all devices—from desktops to mobile screens—can be challenging.",
+      },
+      {
+        decription:
+          "Information Overload: Overload: Presenting technical specifications clearly without overwhelming the user requires careful organization.",
+      },
+      {
+        decription:
+          "User Engagement: Encouraging visitors to explore more (e.g., reviews, accessories) while keeping the design clean and focused.",
+      },
+      {
+        decription:
+          "Conversion Optimization: Designing call-to-action buttons and layouts that guide users smoothly toward making a purchase.",
+      },
+    ],
+    solutions: [
+      {
+        decription:
+          "Optimize Images: Use compressed, high-resolution images and lazy loading to maintain quality without slowing down the site.",
+      },
+      {
+        decription:
+          "Responsive Layout: Apply flexible grids and media queries to ensure the page adapts smoothly across all screen sizes.",
+      },
+      {
+        decription:
+          "Clear Information Hierarchy: Use tabs, icons, and collapsible sections to organize specs, reviews, and details neatly.",
+      },
+      {
+        decription:
+          "Interactive Features: Added user testimonials to boost engagement and trust.",
+      },
+      {
+        decription:
+          "Strong Call-to-Actions: Use clear, well-placed “Add to Cart” and “Buy Now” buttons with contrasting colors to guide users effectively.",
+      },
+    ],
+    displayImgs: [{ imgs: [""], bgColor: "" }],
+    results: [
+      { decription: "85% Satisfaction Rate" },
+      { decription: "60% increase in daily active users" },
+      { decription: "Featured in App Store Health & Fitness category" },
+    ],
+    tech: ["Design", "E-commerce", "Web", "Figma"],
+    comingSoon: true,
+  },
+  {
+    id: "894972b8-d820-44e0-892a-c6fb7470c59c",
     title: "FUNPAY",
     subtitle: "Design to simplify international money transfer",
     mockup: "/projects/funpay/mockup.png",
@@ -62,7 +138,7 @@ export const projects: PROJECT[] = [
     challenges: [
       {
         decription:
-          "To democratize financial transactions by providing a secure, fast, and user-friendly platform that enables anyone with a smartphone to send and receive money nationwide, regardless of their banking institution or geographical location.",
+          "To democratize financial transactions by providing a secure, fast, and user-friendly platform that enables anyone with a smartphone to send and receive money nationwide, regardless of their banking institution or geographical location.",
       },
     ],
     solutions: [
@@ -130,7 +206,7 @@ export const projects: PROJECT[] = [
     tech: ["Design", "Fintech", "Mobile", "Figma"],
   },
   {
-    id: "2",
+    id: "da17cc17-beec-4d2d-b8b0-d524a5f1a9d9",
     title: "MEDSHOP",
     subtitle: "Building a seamless path to better cellular health",
     mockup: "/projects/medshop/mockup.png",
@@ -252,7 +328,7 @@ export const projects: PROJECT[] = [
     tech: ["Design", "Health & Healthcare", "Mobile", "Figma"],
   },
   {
-    id: "3",
+    id: "c5cc6c83-ed12-46e4-a45f-f296d4b44e7a",
     title: "BOSTON",
     subtitle: "Design to simplify The Hailing Process",
     mockup: "/projects/boston/mockup.png",
@@ -348,7 +424,7 @@ export const projects: PROJECT[] = [
     tech: ["Design", "Transportation", "Mobile", "Figma"],
   },
   {
-    id: "4",
+    id: "39361b4e-3860-4fcc-964c-526116c6251a",
     title: "DISWAP",
     subtitle: "A platform built to simplify the swap, stake process",
     mockup: "/projects/diswap/mockup.png",
@@ -370,25 +446,49 @@ export const projects: PROJECT[] = [
     tech: [""],
     comingSoon: true,
   },
-  //   {
-  //     title: "",
-  //     subtitle: "",
-  //     mockup: "",
-  //     tags: [""],
-  //     platform: "mobile",
-  //     year: "",
-  //     client: "",
-  //     role: "",
-  //     category: "",
-  //     hero: {
-  //       img: "",
-  //       bgColor: "",
-  //     },
-  //     overview: "",
-  //     challenges: [{ heading: "", decription: "" }],
-  //     solutions: [{ heading: "", decription: "" }],
-  //     displayImgs: [{ imgs: [""], bgColor: "" }],
-  //     results: [""],
-  //     tech: [""],
+  {
+    id: "a6f50b89-8d6d-4bb2-a4e1-882f9895d48a",
+    title: "SWEEFTPAY",
+    subtitle: "Design to simplify Gift card and crypto Trading",
+    mockup: "/projects/sweeftpay/mockup.png",
+    tags: ["Design", "Fintech", "Mobile"],
+    platform: "mobile",
+    year: "2025",
+    client: "",
+    role: "",
+    category: "",
+    hero: {
+      img: "",
+      bgColor: "",
+    },
+    overview: [{ heading: "", decription: "" }],
+    challenges: [{ heading: "", decription: "" }],
+    solutions: [{ heading: "", decription: "" }],
+    displayImgs: [{ imgs: [""], bgColor: "" }],
+    results: [{ heading: "", decription: "" }],
+    tech: [""],
+    comingSoon: true,
+  },
+  // {
+  //   id: uuidv4(),
+  //   title: "",
+  //   subtitle: "",
+  //   mockup: "",
+  //   tags: [""],
+  //   platform: "mobile",
+  //   year: "",
+  //   client: "",
+  //   role: "",
+  //   category: "",
+  //   hero: {
+  //     img: "",
+  //     bgColor: "",
   //   },
+  //   overview: [{ heading: "", decription: "" }],
+  //   challenges: [{ heading: "", decription: "" }],
+  //   solutions: [{ heading: "", decription: "" }],
+  //   displayImgs: [{ imgs: [""], bgColor: "" }],
+  //   results: [{ heading: "", decription: "" }],
+  //   tech: [""],
+  // },
 ];
