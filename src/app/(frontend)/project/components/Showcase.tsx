@@ -3,7 +3,31 @@ import { cn } from "@/lib/utils";
 import Image from "next/image";
 import React from "react";
 
-const Showcase = ({ displayImgs }: PROJECT) => {
+const Showcase = ({ displayImgs, platform }: PROJECT) => {
+  if (platform === "web") {
+    return (
+      <section className="relative my-25 space-y-10">
+        {displayImgs.map((displayImg, index) => (
+          <main
+            key={index}
+            className="grid grid-cols-1 grid-rows-[masonry] items-start gap-8 sm:grid-cols-[.6fr_.4fr]"
+          >
+            {displayImg.imgs.map((img, imgIndex) => (
+              <img
+                key={imgIndex}
+                alt={img}
+                src={img}
+                className={cn("rounded-2xl object-contain object-center", {
+                  "relative sm:sticky sm:top-25": imgIndex === 0,
+                })}
+              />
+            ))}
+          </main>
+        ))}
+      </section>
+    );
+  }
+
   return (
     <section className="my-25 space-y-10">
       {displayImgs.map((displayImg, index) => (

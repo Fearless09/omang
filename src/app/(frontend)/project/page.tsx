@@ -31,19 +31,28 @@ const ProjectPage = async ({
 
       <main
         className={cn(
-          "my-25 flex aspect-[13.18/7.5] items-center justify-center",
+          "relative my-25 flex aspect-[13.18/7.5] items-center justify-center",
           project.hero.bgColor,
         )}
         data-aos="fade-up"
       >
-        <div className="relative aspect-[11.63/5.2] w-full max-w-[90%] overflow-clip rounded-lg shadow-2xl">
+        {project.platform === "web" ? (
           <Image
             alt={project.title}
             src={project.hero.img}
             fill
             className="object-cover object-center"
           />
-        </div>
+        ) : (
+          <div className="relative aspect-[11.63/5.2] w-full max-w-[90%] overflow-clip rounded-lg shadow-2xl">
+            <Image
+              alt={project.title}
+              src={project.hero.img}
+              fill
+              className="object-cover object-center"
+            />
+          </div>
+        )}
       </main>
 
       <SectionBlock title="Overview of the project" data={project.overview} />

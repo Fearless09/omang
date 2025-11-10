@@ -52,8 +52,8 @@ export const projects: PROJECT[] = [
     role: "Lead Product Designer",
     category: "Web App",
     hero: {
-      img: "",
-      bgColor: "",
+      img: "/projects/product-details/hero.png",
+      bgColor: "bg-[#F2F2F2]",
     },
     overview: [
       {
@@ -105,14 +105,22 @@ export const projects: PROJECT[] = [
           "Strong Call-to-Actions: Use clear, well-placed “Add to Cart” and “Buy Now” buttons with contrasting colors to guide users effectively.",
       },
     ],
-    displayImgs: [{ imgs: [""], bgColor: "" }],
+    displayImgs: [
+      {
+        imgs: [
+          "/projects/product-details/1.png",
+          "/projects/product-details/2.png",
+        ],
+        bgColor: "bg-[#F2F2F2]",
+      },
+    ],
     results: [
       { decription: "85% Satisfaction Rate" },
       { decription: "60% increase in daily active users" },
       { decription: "Featured in App Store Health & Fitness category" },
     ],
     tech: ["Design", "E-commerce", "Web", "Figma"],
-    comingSoon: true,
+    // comingSoon: true,
   },
   {
     id: "894972b8-d820-44e0-892a-c6fb7470c59c",
